@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f0f0f0;
   transition: all 0.5s ease;
 }
 
@@ -50,7 +50,11 @@
 
 .navbar-links li:hover a {
   color: #fff;
-  background-color: #000;
+  background-color: #435256;
+}
+
+.dark-mode .navbar-links ul li a {
+  color: #fff;
 }
 
 .intro-section {
@@ -65,11 +69,41 @@
 }
 
 .name {
-  color: #62787f;
+  color: #435256;
+  font-weight: 700;
 }
 
 h1,
 h2 {
   color: #000;
   margin-bottom: 1rem;
+}
+
+.social-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15rem;
+}
+
+.social-section a {
+  display: inline-block;
+  margin: 0.5rem;
+  font-size: 3em;
+}
+
+.social-section i {
+  color: #435256;
+}
+
+.social-section a:hover {
+  transform: scale(1.2);
+}
+
+.social-section a:hover i.fa-github {
+  color: #6f42c1;
+}
+
+.social-section a:hover i.fa-linkedin {
+  color: #0077b5;
 }
