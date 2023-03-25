@@ -24,21 +24,89 @@
         <div class="navbar-links">
           <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="/pages/projects.html">Projects</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
           </ul>
         </div>
       </nav>
     </section>
     <section class="intro-section">
       <div class="intro">
-        <h1>Hi, I'm <span class="name">Justice Anderson</span></h1>
-        <p>
-          I'm a <span class="name">Front-End Developer</span> currently studying
-          at the University of Central Florida in my Senior year. <br />
-          I'm passionate about creating beautiful and
-          <span class="name">functional websites and applications.</span>
-        </p>
+        <h1 class="name">Justice Anderson</h1>
+        <span class="title">Web Developer</span>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <h2 class="about-title">About Me</h2>
+      <div class="about-container">
+        <div class="about">
+          <img src="/assets/memoji.jpg" alt="Justice's Memoji" />
+          <p>
+            I'm Justice, a Web Developer with a passion for creating beautiful
+            and functional websites. I am currently enrolled in the University
+            of Central Florida's Digital Media program with a focus on Web and
+            Social Platforms. I am looking for a position where I can continue
+            to grow as a developer by challenging myself and contributing
+            meaningful to a team and project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <h2 class="project-heading">Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <img src="/assets/shaq-rps.png" alt="Project 1" />
+          <div class="overlay">
+            <h3 class="project-title">Shaq Rock-Paper-Scissors</h3>
+            <p class="project-description">
+              A project that utilizes Javascript game logic to make a Shaq-Fu!
+              themed rock paper scissors shoot game.
+            </p>
+            <a href="https://jdanderson01.github.io/shaq-rps/">Live Demo</a>
+            <a href="https://github.com/jdanderson01/shaq-rps">Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/assets/nba-survey.png" alt="Project 2" />
+          <div class="overlay">
+            <h3 class="project-title">NBA Survey</h3>
+            <p class="project-description">
+              A Buzzfeed style NBA Quiz that gives a user an NBA legend based on
+              their answers.
+            </p>
+            <a href="https://jdanderson01.github.io/nba-survey/">Live Demo</a>
+            <a href="https://github.com/jdanderson01/nba-survey">Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/assets/etch-a-sketch.png" alt="Project 3" />
+          <div class="overlay">
+            <h3 class="project-title">Etch-A-Sketch</h3>
+            <p class="project-description">
+              An Etch-A-Sketch game made with HTML, CSS, and JavaScript.
+            </p>
+            <a href="https://jdanderson01.github.io/nba-survey/">Live Demo</a>
+            <a href="https://github.com/jdanderson01/nba-survey">Code</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/assets/climate-news-feed.png" alt="Project 4" />
+          <div class="overlay">
+            <h3 class="project-title">Global Climate News Feed</h3>
+            <p class="project-description">
+              A project that pulls data from a Global Climate News API and
+              presents the articles in a card format, akin to a feed.
+            </p>
+            <a href="https://jdanderson01.github.io/climate-news-feed/"
+              >Live Demo</a
+            >
+            <a href="https://github.com/jdanderson01/climate-news-feed">Code</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="social-section">
@@ -55,7 +123,6 @@
         ><i class="fab fa-linkedin"></i
       ></a>
     </section>
-
     <script src="app.js" async defer></script>
   </body>
 </html>
