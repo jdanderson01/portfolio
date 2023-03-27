@@ -237,14 +237,19 @@ h2 {
 
 @media only screen and (max-width: 600px) {
   .navbar-links {
+    position: fixed;
+    top: 70px;
+    left: 0;
     display: none;
-    transition: all 0.5s ease;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
   }
 
   .navbar-links.active {
     display: flex;
     flex-direction: row;
-    transition: all 0.5s ease;
+    justify-content: space-around;
   }
 
   .toggle-button {
@@ -256,6 +261,8 @@ h2 {
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    cursor: pointer;
+    z-index: 2;
   }
 
   .toggle-button .bar {
@@ -263,7 +270,19 @@ h2 {
     width: 100%;
     background-color: #000;
     border-radius: 10px;
-    transition: all 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .toggle-button.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .toggle-button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .about img {
